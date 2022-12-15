@@ -17,3 +17,13 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.body {
+  background-color: rgb(51, 49, 56);
+}
+
+.dates {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+}

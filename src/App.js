@@ -1,20 +1,27 @@
-import React from "react";
-import logo from "./logo.png";
-import "./App.css";
+import React from 'react'
+import logo from './logo.png'
+import './App.css'
+import WorldClock from './components/WorldClock'
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-        </header>
+function App() {
+  return (
+    <>
+      <header className='hero-image'>
+        <img src={logo} className='App-logo' alt='logo' />
+      </header>
+
+      <div>
+        <WorldClock
+          clockData={[
+            'America/Los_Angeles',
+            'Europe/London',
+            'Asia/Singapore',
+            'Africa/Lagos',
+          ]}
+        />
       </div>
-    );
-  }
+    </>
+  )
 }
 
-export default App;
+export default App
